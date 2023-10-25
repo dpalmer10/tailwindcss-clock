@@ -10,9 +10,14 @@
     <script src="script.js" defer></script>
 
 </head>
-<body>
-
-    <h1>Starter kit for Tailwind CSS.</h1>
+<body class="h-screen flex items-center justify-center bg-stone-950">
+  
+    <time class="container mx-auto grid lg:grid-cols-4 sm:grid-cols-2 text-6xl outline text-[#00b8ff] font-mono hover:text-[#00ff9f] hover:bg-[#005678]">
+      <data class="hours text-center outline-double hover:outline-none hover:text-[#d600ff] hover:bg-[#01012b]">HH</data>
+      <data class="minutes text-center outline-double hover:outline-none hover:text-[#d600ff] hover:bg-[#01012b]">MM</data>
+      <data class="seconds text-center outline-double hover:outline-none hover:text-[#d600ff] hover:bg-[#01012b]">SS</data>
+      <data class="amOrPM text-center outline-double hover:outline-none hover:text-[#d600ff] hover:bg-[#01012b]">AM/PM</data>
+    </time>
     
-</body>
+  </body>
 </html>

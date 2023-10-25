@@ -534,23 +534,140 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.bg-slate-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(148 163 184 / var(--tw-bg-opacity));
+.container {
+  width: 100%;
 }
 
-.text-9xl {
-  font-size: 8rem;
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.h-screen {
+  height: 100vh;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.bg-lime-950 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(26 46 5 / var(--tw-bg-opacity));
+}
+
+.bg-stone-950 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(12 10 9 / var(--tw-bg-opacity));
+}
+
+.text-center {
+  text-align: center;
+}
+
+.font-mono {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+.text-6xl {
+  font-size: 3.75rem;
   line-height: 1;
 }
 
-.text-pink-950 {
+.text-\[\#00b8ff\] {
   --tw-text-opacity: 1;
-  color: rgb(80 7 36 / var(--tw-text-opacity));
+  color: rgb(0 184 255 / var(--tw-text-opacity));
+}
+
+.outline {
+  outline-style: solid;
+}
+
+.outline-double {
+  outline-style: double;
 }
 
 /* Your Awesome Styles */
 
-* {
-  outline: 1px dotted gray;
+/* * {
+    outline: 1px dotted gray;
+} */
+
+.hover\:bg-\[\#005678\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 86 120 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-\[\#01012b\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(1 1 43 / var(--tw-bg-opacity));
+}
+
+.hover\:text-\[\#00ff9f\]:hover {
+  --tw-text-opacity: 1;
+  color: rgb(0 255 159 / var(--tw-text-opacity));
+}
+
+.hover\:text-\[\#d600ff\]:hover {
+  --tw-text-opacity: 1;
+  color: rgb(214 0 255 / var(--tw-text-opacity));
+}
+
+.hover\:outline-none:hover {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+@media (min-width: 640px) {
+  .sm\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
 }
